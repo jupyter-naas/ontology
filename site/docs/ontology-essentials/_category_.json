@@ -1,0 +1,8 @@
+{
+  "label": "Ontology Essentials",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Complete guide to the Naas Ontology - BFO-based semantic framework with CCO extensions."
+  }
+}
