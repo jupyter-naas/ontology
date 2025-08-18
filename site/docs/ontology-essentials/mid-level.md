@@ -1,8 +1,10 @@
 ---
+title: Mid-Level
+sidebar_label: Mid-Level
 sidebar_position: 3
 ---
 
-# CCO Extensions
+# Mid-Level
 
 The **Common Core Ontologies (CCO)** extend BFO with mid-level concepts that are common across many domains. The Naas Ontology incorporates CCO and extends it with AI-specific concepts.
 
@@ -339,8 +341,8 @@ abi:claude_intelligence_score a abi:IntelligenceScore ;
 
 The CCO extensions provide the mid-level foundation for:
 
-1. **[Domain Ontologies](/ontology-essentials/domain-ontologies)** - Specific domains that build on CCO concepts
-2. **[Application Layer](/ontology-essentials/application-layer)** - Implementation-specific extensions
+1. **[Domain-Level](/ontology-essentials/domain-level)** - Specific domains that build on CCO concepts
+2. **[Application-Level](/ontology-essentials/application-level)** - Implementation-specific extensions
 3. **[Process-Centric Routing](/ontology-essentials/process-routing)** - AI routing based on CCO process analysis
 
 ---

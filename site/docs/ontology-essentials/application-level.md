@@ -1,8 +1,10 @@
 ---
+title: Application-Level
+sidebar_label: Application-Level
 sidebar_position: 5
 ---
 
-# Application Layer
+# Application-Level
 
 The application layer of the Naas Ontology provides implementation-specific concepts that handle the practical aspects of deploying and managing ontological systems in production environments.
 

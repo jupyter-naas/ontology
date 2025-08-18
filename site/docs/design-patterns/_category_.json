@@ -1,0 +1,9 @@
+{
+  "label": "Design Patterns",
+  "position": 6,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Reusable CCO and BFO design patterns for consistent ontological modeling across AI domains."
+  }
+}

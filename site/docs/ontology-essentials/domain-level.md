@@ -1,8 +1,10 @@
 ---
+title: Domain-Level
+sidebar_label: Domain-Level
 sidebar_position: 4
 ---
 
-# Domain Ontologies
+# Domain-Level
 
 Domain ontologies in the Naas framework provide specialized concepts for specific domains, building systematically on BFO and CCO foundations. Each domain ontology addresses particular aspects of AI-powered knowledge management.
 
@@ -355,7 +357,7 @@ All domain concepts can be tagged with foundry curation information for organiza
 
 Domain ontologies provide the specialized foundation for:
 
-1. **[Application Layer](/ontology-essentials/application-layer)** - Implementation-specific concepts
+1. **[Application-Level](/ontology-essentials/application-level)** - Implementation-specific concepts
 2. **[Process-Centric Routing](/ontology-essentials/process-routing)** - AI routing based on domain capabilities
 
 ---

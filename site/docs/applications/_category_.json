@@ -1,0 +1,9 @@
+{
+  "label": "Applications",
+  "position": 3,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Specific application integrations and third-party system ontologies."
+  }
+}

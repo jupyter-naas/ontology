@@ -23,6 +23,8 @@ const config = {
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
 
+
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -105,12 +107,32 @@ const config = {
           src: "/img/naas.png",
         },
         items: [
-                      // Left side: Clean navigation
-            {
-              to: "ontology-essentials/introduction",
-              position: "left", 
-              label: "Ontology Essentials",
-            },
+          // Left side: Clean navigation
+                    {
+            to: "/",
+            position: "left",
+            label: "Ontology Essentials",
+          },
+          {
+            to: "bfo",
+            position: "left",
+            label: "BFO",
+          },
+          {
+            to: "cco",
+            position: "left",
+            label: "CCO",
+          },
+          {
+            to: "abi",
+            position: "left",
+            label: "ABI",
+          },
+          {
+            to: "applications",
+            position: "left",
+            label: "Applications",
+          },
           // Right side: External actions & resources
           {
             to: "https://naas.ai/",

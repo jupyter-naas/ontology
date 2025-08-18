@@ -138,10 +138,10 @@ The Naas Ontology is operationalized through the **Agentic Brain Infrastructure 
 
 Explore each level of the ontological hierarchy:
 
-1. **[BFO Foundation](/ontology-essentials/bfo-foundation)** - Understanding the 7 Buckets framework
-2. **[CCO Extensions](/ontology-essentials/cco-extensions)** - Common Core Ontologies integration
-3. **[Domain Ontologies](/ontology-essentials/domain-ontologies)** - AI Agent, Organization, and other domains
-4. **[Application Layer](/ontology-essentials/application-layer)** - Foundry integration and data sources
+1. **[Top-Level](/ontology-essentials/top-level)** - Understanding the 7 Buckets framework
+2. **[Mid-Level](/ontology-essentials/mid-level)** - Common Core Ontologies integration
+3. **[Domain-Level](/ontology-essentials/domain-level)** - AI Agent, Organization, and other domains
+4. **[Application-Level](/ontology-essentials/application-level)** - Foundry integration and data sources
 5. **[Process-Centric Routing](/ontology-essentials/process-routing)** - AI routing based on cognitive processes
 
 ---

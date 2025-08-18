@@ -1,0 +1,8 @@
+{
+  "label": "Temporal Region",
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Temporal regions that provide the WHEN framework - time intervals and temporal boundaries."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "CCO",
+  "position": 5,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Common Core Ontologies - mid-level concepts extending BFO for practical applications."
+  }
+}

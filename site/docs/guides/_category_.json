@@ -1,0 +1,9 @@
+{
+  "label": "Guides",
+  "position": 7,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Practical guides for implementing and using the Naas Ontology."
+  }
+}

@@ -1,8 +1,10 @@
 ---
+title: Top-Level
+sidebar_label: Top-Level
 sidebar_position: 2
 ---
 
-# BFO Foundation
+# Top-Level
 
 The **Basic Formal Ontology (BFO)** provides the foundational framework for the Naas Ontology. BFO is a top-level ontology that systematically categorizes all entities that exist or can exist.
 
@@ -258,8 +260,8 @@ abi:truth_seeking_process_001 a abi:AIProcessing ;
 
 The BFO foundation provides the systematic basis for:
 
-1. **[CCO Extensions](/ontology-essentials/cco-extensions)** - Common Core Ontologies that build on BFO
-2. **[Domain Ontologies](/ontology-essentials/domain-ontologies)** - Specific domains grounded in BFO categories
+1. **[Mid-Level](/ontology-essentials/mid-level)** - Common Core Ontologies that build on BFO
+2. **[Domain-Level](/ontology-essentials/domain-level)** - Specific domains grounded in BFO categories
 3. **[Process-Centric Routing](/ontology-essentials/process-routing)** - AI routing based on BFO process analysis
 
 ---

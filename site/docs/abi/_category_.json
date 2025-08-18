@@ -1,0 +1,9 @@
+{
+  "label": "ABI",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Agentic Brain Infrastructure extensions - AI-specific ontological concepts."
+  }
+}
