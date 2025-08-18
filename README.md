@@ -104,7 +104,6 @@ This ontology documentation site is built with Docusaurus and focuses on explain
 ontology/
 ├── site/                           # Docusaurus application
 │   ├── docs/                      # Documentation content
-│   │   ├── index.md               # Landing page
 │   │   └── ontology-essentials/   # Complete ontology framework
 │   │       ├── introduction.md    # Overview and architecture
 │   │       ├── bfo-foundation.md  # BFO 7 Buckets framework
