@@ -3,7 +3,7 @@
 BFO-based semantic framework incorporating Common Core Ontologies, extended through domain-specific and application-level ontologies for AI-powered knowledge management.
 
 [![Node.js](https://img.shields.io/badge/Node.js->=20.0-green.svg)](https://nodejs.org/)
-[![Docusaurus](https://img.shields.io/badge/Docusaurus-3.6.3-blue.svg)](https://docusaurus.io/)
+[![Docusaurus](https://img.shields.io/badge/Docusaurus-3.8.1-blue.svg)](https://docusaurus.io/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **🚀 [Live Documentation](https://ontology.naas.ai)** | **🧠 [ABI Repository](https://github.com/jupyter-naas/abi)** | **💬 [Community](https://join.slack.com/t/naas-club/shared_invite/zt-1970s5rie-dXXkigAdEJYc~LPdQIEaLA)**
@@ -27,16 +27,19 @@ The Naas Ontology provides the foundational semantic structure for the **Agentic
 
 The Naas Ontology follows a principled 4-level hierarchy:
 
-- **Top-Level** - BFO core concepts and OWL definitions
-- **Mid-Level** - CCO extensions (Agent, Event, Quality ontologies)  
-- **Domain-Level** - Specific domains (AI Agent, Organization, Capability ontologies)
-- **Application-Level** - Implementation-specific (Foundry, DataSource ontologies)
+- **Top-Level** - BFO Slim (essential foundational classes for AI systems)
+- **Mid-Level** - CCO extensions (Agent, Event, Quality, Organization ontologies)  
+- **Domain-Level** - ABI concepts (AI Agent, Workflow, Trigger, Capability ontologies)
+- **Application-Level** - Third-party integrations (LinkedIn, Microsoft Office, Google Workspace)
 
 ### Key Features
 
 - **BFO-Grounded** - All concepts properly grounded in formal ontological principles
 - **Process-Centric** - AI routing based on BFO's 7 Buckets framework
-- **Modular Design** - Each AI module (Claude, Gemini, Gemma, Qwen) has its own ontologies
+- **Enhanced Code Highlighting** - Proper Turtle and SPARQL syntax highlighting
+- **Comprehensive Coverage** - 74+ documented concepts across all ontological levels
+- **Application Integrations** - Third-party system ontologies (Office, Google Workspace, LinkedIn)
+- **Design Patterns** - Reusable CCO modeling patterns for consistent development
 - **Production Ready** - Used in the Agentic Brain Infrastructure (ABI)
 
 ## Quick Start
@@ -104,27 +107,38 @@ This ontology documentation site is built with Docusaurus and focuses on explain
 ontology/
 ├── site/                           # Docusaurus application
 │   ├── docs/                      # Documentation content
-│   │   └── ontology-essentials/   # Complete ontology framework
-│   │       ├── introduction.md    # Overview and architecture
-│   │       ├── bfo-foundation.md  # BFO 7 Buckets framework
-│   │       ├── cco-extensions.md  # Common Core Ontologies
-│   │       ├── domain-ontologies.md # Domain-specific concepts
-│   │       ├── application-layer.md # Implementation layer
-│   │       └── process-routing.md   # Process-centric AI routing
+│   │   ├── ontology-essentials/   # Complete ontology framework
+│   │   │   ├── introduction.md    # Overview and architecture
+│   │   │   ├── top-level.md       # BFO Slim foundation
+│   │   │   ├── mid-level.md       # CCO extensions
+│   │   │   ├── domain-level.md    # ABI domain concepts
+│   │   │   ├── application-level.md # Application integrations
+│   │   │   └── process-routing.md # Process-centric AI routing
+│   │   ├── bfo/                   # BFO Slim documentation
+│   │   ├── cco/                   # CCO documentation
+│   │   ├── abi/                   # ABI domain documentation
+│   │   ├── applications/          # Third-party integrations
+│   │   ├── design-patterns/       # CCO modeling patterns
+│   │   ├── guides/                # Modeling conventions
+│   │   └── reference/             # Prefixes and glossary
 │   ├── src/               # Custom React components
 │   └── static/            # Static assets
 ├── resources/             # ABI repository analysis
-│   └── .abi/             # Cloned ABI repository for reference
+├── scripts/               # Build and deployment scripts
 └── README.md             # This file
 ```
 
 ### Key Directories
 
 - **`site/docs/ontology-essentials/`** - Complete ontology framework documentation
+- **`site/docs/bfo/`** - BFO Slim classes and relations
+- **`site/docs/cco/`** - CCO foundational concepts
+- **`site/docs/abi/`** - ABI domain-specific concepts
+- **`site/docs/applications/`** - Third-party system integrations
+- **`site/docs/design-patterns/`** - Reusable CCO modeling patterns
 - **`site/src/`** - Custom React components and pages
 - **`site/static/`** - Images, assets, and downloadable files
 - **`site/docusaurus.config.js`** - Docusaurus configuration
-- **`resources/.abi/`** - ABI repository for ontology implementation reference
 
 ## Available Scripts
 
@@ -137,21 +151,28 @@ ontology/
 | `npm run swizzle` | Customize Docusaurus components |
 | `npm run deploy` | Deploy to GitHub Pages |
 
-## Ontology Documentation Structure
+## Documentation Structure
 
-The documentation is organized into six comprehensive sections:
+The documentation is organized into comprehensive sections covering all ontological levels:
 
-1. **Introduction** - Complete ontological architecture and principles
-2. **BFO Foundation** - Basic Formal Ontology's 7 Buckets framework
-3. **CCO Extensions** - Common Core Ontologies integration
-4. **Domain Ontologies** - AI Agent, Organization, Capability domains
-5. **Application Layer** - Foundry and DataSource implementations
-6. **Process-Centric Routing** - AI routing based on cognitive processes
+### Core Framework
+1. **Ontology Essentials** - Complete architectural overview and principles
+2. **BFO** - Basic Formal Ontology Slim (essential foundational classes)
+3. **CCO** - Common Core Ontologies (Agent, Event, Quality, Organization)
+4. **ABI** - Agentic Brain Infrastructure domain concepts
+5. **Applications** - Third-party system integrations (Office, Google, LinkedIn)
 
-Each section includes:
-- **Mermaid diagrams** - Visual representations of ontological structures
-- **TTL code blocks** - Real Turtle/RDF examples
-- **Implementation details** - How concepts are used in ABI
+### Supporting Documentation
+6. **Design Patterns** - Reusable CCO modeling patterns
+7. **Guides** - Modeling conventions and best practices
+8. **Reference** - Prefixes, glossary, and technical specifications
+
+### Features
+- **Enhanced Code Highlighting** - Proper Turtle and SPARQL syntax highlighting
+- **Mermaid Diagrams** - Visual representations of ontological structures
+- **Interactive Examples** - Real Turtle/RDF code with line highlighting
+- **Cross-References** - Comprehensive linking between concepts
+- **Search Integration** - Algolia-powered semantic search
 
 ## Contributing
 
@@ -175,16 +196,20 @@ We welcome contributions to improve the documentation!
 ### Writing Guidelines
 
 - Use clear, concise language with ontological precision
-- Include TTL code examples for all ontological concepts
+- Include Turtle code examples for all ontological concepts
 - Follow BFO and CCO principles in all examples
 - Use standardized Mermaid diagrams with proper styling
 - Ground all concepts in formal ontological categories
 - Test all links and references
+- Use PascalCase for all markdown file names to match ontology conventions
 
 ### File Organization
 
-- Place ontology documentation in `docs/ontology-essentials/`
-- Use descriptive filenames with hyphens (e.g., `bfo-foundation.md`)
+- **Ontology Essentials**: Place framework docs in `docs/ontology-essentials/`
+- **BFO Documentation**: Place in `docs/bfo/` with proper hierarchy
+- **CCO Documentation**: Place in `docs/cco/` following CCO structure
+- **ABI Documentation**: Place in `docs/abi/` for domain concepts
+- **Applications**: Place in `docs/applications/` for third-party integrations
 - Follow the 4-level ontological hierarchy (Top → Mid → Domain → Application)
 - Include proper BFO grounding in all new concepts
 - Update navigation in `sidebars.js` when adding new sections
@@ -192,6 +217,7 @@ We welcome contributions to improve the documentation!
 ## Support
 
 - **Ontology Documentation**: [ontology.naas.ai](https://ontology.naas.ai)
+- **Platform Documentation**: [docs.naas.ai](https://docs.naas.ai)
 - **ABI Repository**: [github.com/jupyter-naas/abi](https://github.com/jupyter-naas/abi)
 - **Community Slack**: [Join Here](https://join.slack.com/t/naas-club/shared_invite/zt-1970s5rie-dXXkigAdEJYc~LPdQIEaLA)
 - **GitHub Issues**: [Report bugs or request features](https://github.com/jupyter-naas/ontology/issues)
