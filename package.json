@@ -1,0 +1,28 @@
+{
+  "name": "naas-ontology",
+  "version": "1.0.0",
+  "description": "Naas Ontology Documentation - BFO-Based Semantic Framework",
+  "scripts": {
+    "build": "cd site && npm ci && npm run build",
+    "start": "cd site && npm start",
+    "serve": "cd site && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jupyter-naas/ontology.git"
+  },
+  "keywords": [
+    "ontology",
+    "bfo",
+    "cco",
+    "abi",
+    "semantic-web",
+    "docusaurus",
+    "documentation"
+  ],
+  "author": "Naas",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0"
+  }
+}
