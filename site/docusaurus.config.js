@@ -72,6 +72,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Announcement bar for work in progress
+      announcementBar: {
+        id: 'wip_announcement',
+        content: '🚧 This ontology documentation is currently <strong>Work in Progress</strong> - Content and structure may change frequently',
+        backgroundColor: '#fff3cd',
+        textColor: '#856404',
+        isCloseable: true,
+      },
       // Social sharing configuration
       image: "img/landing-screensaver.gif",
       metadata: [
