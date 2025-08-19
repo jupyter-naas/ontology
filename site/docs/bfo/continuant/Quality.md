@@ -10,7 +10,7 @@ iri: bfo:BFO_0000019
 
 **Parent:** [Specifically Dependent Continuant](/bfo/continuant)
 
-**See also:** [Disposition](/bfo/continuant/disposition), [Role](/bfo/continuant/role)
+**See also:** [Disposition](/bfo/continuant/Disposition), [Role](/bfo/continuant/Role)
 
 ## Modeling Notes
 

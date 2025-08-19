@@ -10,7 +10,7 @@ iri: bfo:BFO_0000034
 
 **Parent:** [Realizable Entity](/bfo/continuant/realizable-entity)
 
-**See also:** [Role](/bfo/continuant/role), [Disposition](/bfo/continuant/disposition)
+**See also:** [Role](/bfo/continuant/Role), [Disposition](/bfo/continuant/Disposition)
 
 ## Modeling Notes
 

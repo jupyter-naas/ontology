@@ -8,9 +8,9 @@ iri: abi:Event
 
 **Definition:** A process that represents a significant occurrence or change in state within AI systems.
 
-**Parent:** [Process](/bfo/occurrent/process)
+**Parent:** [Process](/bfo/occurrent/Process)
 
-**See also:** [Trigger](/abi/trigger), [Workflow](/abi/workflow)
+**See also:** [Trigger](/abi/Trigger), [Workflow](/abi/Workflow)
 
 ## Modeling Notes
 

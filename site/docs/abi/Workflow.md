@@ -8,9 +8,9 @@ iri: abi:Workflow
 
 **Definition:** A planned sequence of AI processes and activities designed to achieve specific objectives.
 
-**Parent:** [Plan](/cco/plan)
+**Parent:** [Plan](/cco/Plan)
 
-**See also:** [Trigger](/abi/trigger), [AI Agent](/abi/ai-agent)
+**See also:** [Trigger](/abi/Trigger), [AI Agent](/abi/AIAgent)
 
 ## Modeling Notes
 

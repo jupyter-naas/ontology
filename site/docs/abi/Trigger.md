@@ -10,7 +10,7 @@ iri: abi:Trigger
 
 **Parent:** [Process Boundary](/bfo/occurrent/process-boundary)
 
-**See also:** [Event](/abi/event), [Workflow](/abi/workflow)
+**See also:** [Event](/abi/Event), [Workflow](/abi/Workflow)
 
 ## Modeling Notes
 

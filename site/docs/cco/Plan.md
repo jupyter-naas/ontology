@@ -8,9 +8,9 @@ iri: cco:ont00000344
 
 **Definition:** An information content entity that specifies a sequence of actions or procedures designed to achieve specific objectives.
 
-**Parent:** [Information Object](/cco/information-object)
+**Parent:** [Information Object](/cco/InformationObject)
 
-**See also:** [Workflow](/abi/workflow), [Process](/bfo/occurrent/process)
+**See also:** [Workflow](/abi/Workflow), [Process](/bfo/occurrent/Process)
 
 ## Modeling Notes
 
