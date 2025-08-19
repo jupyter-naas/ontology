@@ -7,6 +7,90 @@ description: Standardized styling for mermaid diagrams across Naas documentation
 
 This document defines the consistent styling approach for all Mermaid diagrams in Naas documentation.
 
+## Enhanced Code Highlighting Examples
+
+Our documentation now supports enhanced syntax highlighting for ontology-related languages:
+
+### RDF/Turtle Example
+
+```turtle title="BFO Core Classes"
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# highlight-start
+bfo:BFO_0000001 a owl:Class ;
+    rdfs:label "entity" ;
+    rdfs:comment "An entity is anything that exists or has existed or will exist." .
+# highlight-end
+
+bfo:BFO_0000002 a owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000001 ;
+    rdfs:label "continuant" ;
+    # highlight-next-line
+    rdfs:comment "A continuant is an entity that persists, endures, or continues to exist through time." .
+```
+
+### SPARQL Query Example
+
+```sparql title="Find All AI Agents"
+PREFIX abi: <https://ontology.naas.ai/abi/>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?agent ?label ?capability WHERE {
+    # highlight-start
+    ?agent a abi:AIAgent ;
+           rdfs:label ?label ;
+           abi:hasCapability ?capability .
+    # highlight-end
+    
+    FILTER(LANG(?label) = "en")
+} ORDER BY ?label
+```
+
+### JSON-LD Example
+
+```json title="ABI Agent Context"
+{
+  "@context": {
+    "abi": "https://ontology.naas.ai/abi/",
+    "bfo": "http://purl.obolibrary.org/obo/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@type": "abi:AIAgent",
+  "@id": "abi:ChatAgent001",
+  "rdfs:label": "Customer Support Agent",
+  "abi:hasCapability": [
+    "abi:NaturalLanguageProcessing",
+    "abi:IntentRecognition"
+  ]
+}
+```
+
+### Python Ontology Processing
+
+```python title="ontology_processor.py"
+from rdflib import Graph, Namespace
+
+# Load ontology
+g = Graph()
+g.parse("abi-ontology.ttl", format="turtle")
+
+# Define namespaces
+ABI = Namespace("https://ontology.naas.ai/abi/")
+BFO = Namespace("http://purl.obolibrary.org/obo/")
+
+# Query for AI agents
+query = """
+SELECT ?agent ?label WHERE {
+    ?agent a abi:AIAgent ;
+           rdfs:label ?label .
+}
+"""
+
+for row in g.query(query):
+    print(f"Agent: {row.agent}, Label: {row.label}")
+```
+
 ## Color Scheme
 
 ### Primary Colors

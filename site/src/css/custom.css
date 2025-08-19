@@ -128,6 +128,7 @@
   line-height: 1.4;
 }
 
+/* ===== CLEAN CODE HIGHLIGHTING ===== */
 /* Code text sizing */
 .markdown code {
   font-size: 0.9rem;
@@ -135,6 +136,29 @@
 
 .markdown pre code {
   font-size: 0.875rem;
+}
+
+/* Word wrap for code blocks by default */
+.prism-code {
+  white-space: pre-wrap !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure long lines wrap in code blocks */
+pre code {
+  white-space: pre-wrap !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Custom highlighted code line background - subtle and clean */
+:root {
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 /* Navbar CTA styling */

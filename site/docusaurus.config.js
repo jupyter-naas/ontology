@@ -82,6 +82,29 @@ const config = {
         {property: 'og:image:height', content: '630'},
         {property: 'og:type', content: 'website'},
       ],
+      // Prism syntax highlighting configuration
+      prism: {
+        theme: require("prism-react-renderer").themes.github,
+        darkTheme: require("prism-react-renderer").themes.dracula,
+        additionalLanguages: [
+          'turtle',      // RDF Turtle format for ontologies
+          'sparql',      // SPARQL query language
+          'bash',        // Shell scripts
+          'powershell',  // PowerShell for Windows users
+          'python',      // Python for ontology processing
+          'java',        // Java for ontology tools
+          'csharp',      // C# for .NET ontology applications
+          'yaml',        // YAML for configuration files
+          'json',        // JSON for data
+        ],
+        magicComments: [
+          {
+            className: 'theme-code-block-highlighted-line',
+            line: 'highlight-next-line',
+            block: {start: 'highlight-start', end: 'highlight-end'},
+          },
+        ],
+      },
       // Algolia search configuration
       algolia: {
         appId: 'NGBDVK8FYQ',
@@ -108,20 +131,10 @@ const config = {
         },
         items: [
           // Left side: Clean navigation
-                    {
+          {
             to: "/",
             position: "left",
             label: "Ontology Essentials",
-          },
-          {
-            to: "bfo",
-            position: "left",
-            label: "BFO",
-          },
-          {
-            to: "cco",
-            position: "left",
-            label: "CCO",
           },
           {
             to: "abi",
@@ -133,12 +146,27 @@ const config = {
             position: "left",
             label: "Applications",
           },
+          {
+            to: "bfo",
+            position: "left",
+            label: "BFO",
+          },
+          {
+            to: "cco",
+            position: "left",
+            label: "CCO",
+          },
           // Right side: External actions & resources
           {
             to: "https://naas.ai/",
             label: "Try Platform",
             position: "right",
             className: "navbar__item--cta",
+          },
+          {
+            to: "https://docs.naas.ai/",
+            label: "Platform Docs",
+            position: "right",
           },
           {
             type: "dropdown",
