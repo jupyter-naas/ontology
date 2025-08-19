@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Naas Ontology Documentation - BFO-Based Semantic Framework",
   "scripts": {
-    "build": "cd site && npm ci && npm run build",
+    "build": "cd site && npm ci && npm run build && cd .. && cp -r site/build ./build",
     "start": "cd site && npm start",
     "serve": "cd site && npm run serve"
   },
