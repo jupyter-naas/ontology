@@ -1,7 +1,7 @@
 {
   "name": "naas-ontology",
   "version": "1.0.0",
-  "description": "Naas Ontology Documentation - BFO-Based Semantic Framework",
+  "description": "Naas Ontology",
   "scripts": {
     "build": "cd site && npm ci && npm run build && cd .. && cp -r site/build ./build",
     "start": "cd site && npm start",

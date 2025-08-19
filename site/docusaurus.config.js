@@ -5,7 +5,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Naas Ontology - BFO-Based Semantic Framework",
+  title: "Naas Ontology",
   tagline: "Comprehensive semantic framework incorporating BFO and CCO, extended through domain-specific and application-level ontologies for AI-powered knowledge management.",
   favicon: "img/favicon.ico",
 
