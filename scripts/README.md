@@ -15,6 +15,7 @@ This directory contains automation scripts for maintaining the Naas Ontology doc
 - Sanitizes files for MDX compatibility by:
   - Escaping curly braces `{}` that could be interpreted as JSX
   - Replacing empty markdown links `[]()` with dashes to prevent build errors
+  - Transforming ABI repository links to local documentation paths (e.g., `/docs/ontology/reference/full/Entity/Continuant` → `/bfo/Continuant`)
 
 ### Prerequisites
 

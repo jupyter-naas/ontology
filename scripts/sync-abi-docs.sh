@@ -59,6 +59,7 @@ sanitize_mdx_file() {
     # 1. Escape curly braces to prevent JSX interpretation
     # 2. Replace empty markdown links with plain text to avoid MDX errors
     # 3. Escape mathematical expressions that could be interpreted as JSX
+    # 4. Transform ABI repository links to local documentation paths
     sed -E \
         -e "s/\{/\\\\{/g" \
         -e "s/\}/\\\\}/g" \
@@ -67,6 +68,12 @@ sanitize_mdx_file() {
         -e "s/<=/\\\\<=/g" \
         -e "s/>=/\\\\>=/g" \
         -e "s/≠/\\\\≠/g" \
+        -e "s|/docs/ontology/reference/full/Entity/Continuant|/bfo/Continuant|g" \
+        -e "s|/docs/ontology/reference/full/Entity/Occurrent|/bfo/Occurrent|g" \
+        -e "s|/docs/ontology/reference/full/Entity/Entity|/bfo|g" \
+        -e "s|/docs/ontology/reference/abi|/abi|g" \
+        -e "s|/docs/ontology/reference/bfo|/bfo|g" \
+        -e "s|/docs/ontology/reference/cco|/cco|g" \
         "$temp_file" > "$dest_file"
     
     # Cleanup
